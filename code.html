@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABES Engineering College-Time table</title>
+</head>
+<style>
+    h2,h3,h4{
+        text-align: center;
+    }
+    h2{
+        color:red;
+    }
+    h3{
+        color:blue;
+    }
+    h4{
+        color:black
+    }
+    img{
+        margin-right:auto;
+        margin-left: auto;
+        display:flex;
+        width: 150px;
+        height:160px;
+    }
+</style>
+<body>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMQAAACUCAMAAAD79nauAAAA4VBMVEX///83NDV1Li7zuDE0MTL39/cvLC3p6en8/Pzy8vJzKy7CwcFXLCzv7+9BPj/k5OReXFyAgYFxLi58entvcXFQTk/JyMiZl5gwExM6GRnU1NQqJyj3vDGNiotYVlbBhC8AAACqqamAPC7bnzBOGytuIy7nrDCLSC5qaGmzsrLVuLnhpjCqbW+nZy96NC68fi/PkjCvcC8eGRvFoKGiXF9pGi6WVi6gYC9TIyzs4ODdx8evd3m7i42QTy5gKytCIyOXRUhZAC4sGBgfBgYnMTE2JSUUIiMQAAUADw+JISaPNzrf5euuAAARaklEQVR4nO1cCZeayNp2YaehoNnmgkiQyOIGqK3jlu7JTJLv5v//oO8tCnd6JnPSRr2nnzlzZCnt96l3L4rUam8EXv3tsYHRnTWHeTPvNhpCJ+hHT1lz+ATngiDAvbwVbroCHvb4H519q7/9ZtiSEBpZ849REEQCJhF6QWv49JS3As/zZg2hm7aaXiTcPIlZmEUzrzkkJPI8yOagiSDrBxsBs+i3MszitknAXIdhs5WNBGJOERyCOY2izQhkF4R5v5WCvm6ZRHcT9lNA0JwTEsIf/XCz9QkQXhDAtjo3TUIQPJAXuMybGXHs7h/NgkRX6HYboxF8zJq3TmIWhtjiQf7m7KnTB03krayRYnOae8NOOuxGWSsd3bJPCJ2slXUwiYbXaj5FfXCPltfpwgnGvBO0sLt0btqxhSj1hqMiD8zTbAZnXho9CaPcw8hHwsbLslzo3m6I/fwA+Pjx94cCv3/8iM/I+e8fy6PfP376/SMZ8Pl2Sfw4bpNEWXb8IG7UnKpIQFztPj09CXdLQhCg1BtmGTj3Bh8L90dCaIzyoTAKwvk8D9OnjQdVh3BvJKLcC/ozKGeFdN7PhayZefORcF8khlk6nAU5rsmzPI1mTU/IvbQj3BEJaCrCKM9mnXkYZoA864+8Yd7f3BEJcONhM+3M51nYJIDCdegFXqPbvRcS3U0aCVl/loHwzS2LZh4NN0/RsHsnJJ7CMBxuwtaOAaGRdTpp2Np074JEN0073nAYNk/R7zeDedAQbpcE7ZYkhFnwlKbz8MCStgfhvCN4ebckoUnXlvkMnFX22KMsi+azrLWTPDggkcIdEmcff7tBEjXrz5JE2gzyYaGIFnaLYRS0WsQ/WpAysjLOPv7m0tcW+Rz+n5/KHLEJmsQh+l6/5QndvNn0suJCOEyzTenYf1rXlrgCiVOSEJ4aKSERRODhArRzs266jVCjUacY9umzf22JK2DKD4V0eRBuSGhqhcBg1mlsOl0wqW2ECvtz7NoPVHJtiSuAlGdScPTBf0Hklpeneb7ZbEabaJ7naVq4SQgsioT3YNjXlrgCtDrGazYjbzMceq1mEGSdaLOZz/LZbD6Lok4e9IEEHKSYxONY468tcRWSvx7wgpO3ySNMYjjfzED+oZflw/l8tpnPPUwi2xQkHv66RZeo1WzDKdKEl+dBK0yjCDhEnQ4Us/hw0xkNwTE6wTDDJL7I5rXlrQSvfn3EJLA/tLJhEIZNKKKyTZT3Q4xsnjf7AlzEjv01vr2io0DyF3btWQ5eHO7KjVYTHJpkPjgKhM0cr44/fL3FLIFB65+xaz89bRrecQW7L6OCTrcrNB6/KDdYcxCYH7BrR15/flD/HSLw+iHuUR8+3GKSKGF8/tQQ0uYsG3pVeoAuI8rCjfD4hbq2pH8D8dtDQ9j0u+lsXkXCG2aj3IP4+uE24ysBH0MVCE1Rdx60zu0pmKezURAJj7+1bzQ0EZjy86PQDfqt/mx44hatMJqFQTjrNp4Z8dpy/i1o33lodGdB2ul0ouyIQhamwibLnhoPjnuTFccebDwG3x4JnSzIO7iYJQ1R6G26Xjh/EgTh01hB15byn2AaXyBvd4f9eZBuwszLgiBsep3GLI1C3Jk+fpFv25gKiPIXvP8hGA47EE5H0SxKw9koTfMowySe6wl3bRH/GZzvPD82RrM09aAKzDxvljbnUZgPvTwq6o0bbK3PQVsfIEQJnVkWRFE/7UBrOoT/vRmumT6oN+7UO6gfsF+Uj7Ohfg2gbo3gwuPz/ynXlu2HQWtfn8uVtBGg0S2ebDcaz1/jm637ziFZ9S0LQdg+IHp8ZtybztSnoH35y6fGET49y9a9+EMJzozHDwePjh4fxu3kLuLSERAEqZ0yHp8/qPYd5IczcNa3Px9KU/r84RZXXn8IKB5DJdX49GWs3KUaCDgxrn95ZpQ79IZDSKIeJ3eUHF4BfWdx9X8NHCo6Hxr8mWVriOZRjb07q+JFVmKRJILgliiKiejbvnhvhiVZiWr6SQL6QL6PrMTWTfPm29ITSL6dWL6fgCpc0YQDCyjdmz1xyEYF+JqJeJtFdg3dmyLe8Y53vOMd73jHO97xjne843Wwr7Q4HF2C484X/XY3D3E8jLbFBCDav6IhV6ufvXG+oZSINUs8aUjFWDnH4YI/a8WGTAHqsuJfvBNE35TqjYhi3WFKOOOx7NqHXE1jd3M3yNhvQaMTeewAAQyG+Xbxx3vWWPYr14hthcEyUAyDhaEc41BjKCYS1ssPLOxeEbQlk+8SHtSlNx4ghWH0SnVLGhaEMmLFcBwQhnGs/TMu2iXSUwxoxHGAJ7XfWcpamDfcqsv4/sVJcD6ezMqNV7RVzK+LbNPXZSxV3d17RlJQiBNRTHxLU2SH2SkKvliMjovFNtdgmAuTKMzC0aoeI3I+ltyxsK0hq2Ah+zuLMvEFhmyJpSVkasrOI0yjGGuhwkp5Wx1fmERSyGJU7gpNCIlCblZzsFrineEVkjL7lw6kXSQlinDU3cRI+mUdW1KJA1ZGWfGABDmh6rstKfYJiT1YncGKONi8ItkXfTSTkOhCVe6XEY0DEqyGRxLjwkAG8woJu7gT/7JVQqkwEiycXiGNeUhCcotxO5Wh9mskiKH9OhIiTJqjQT6gqApVHJHgrX9Fgmr/qq38LAR7ikEWiOPEr0jzqjm9SsLGd14J2xcAdlZHJbY/Plf/EYlT0V4nUTg22NOvUQWtOqAIk6TmsXVWexySoC3mOMS+ToK2SLDQfwkLGyobB9IVhxMCc27EBySgoMMyt/f55HUSJPrCN+VfYVGxU8ZWBEcVuYKEGQv6CWTVsd8c5sS/IQGlTMGC+WZdPESxUNUR++AsTOIsKJZJWRT9GHRGUYZ4YHEFCSoW7S3MffODXIdYFKWaF65f/fFu+rG4lHy6ubIgUZcNGauhLh9vrilI1OX2Doa6nwQoUhhS5Lb9i+7uwlIwZflcVB9nqiAkKKqotOuynpx+nXQMZU90NAesZRAWDHC/HAdcg9d326RxlKVOvYJkrRgq7TbogmLq7gHLkgRIXzZHx5UwLSoMMSlGudw7RyhmDkomCfc4zMmu6QPH9hUH58V4b1GlORltmcIt03n1ZWvb9lS+lHsXzQKlJFu3tOT6mVcc5gmk4Yl19jG2jE42a5vQ90DxdVao0r5BlOFcqo4qEjA0zuMSxDaO/9pJASgXheJ2REmCmKMkalWWj+Iy1l6mKeJ8at/h70Adp6cjEjWkFg3FdlHhJE9US4lcuYgN1U3XzwLpzjmH/cxWkSBt0U7sv0l2B2BJW1vddP0kikKjTh2vGxXrL4dTdkKCiL2tTn6MBPhS0dZe4l8xYHHJxyjuITRi86+ToGPmwDJ+kEQtYS7VIhXijY8NVSosbCydjNqT4OLD3vlHSZBm9ZVFxp8BrsEhfJ9cJYsb7j7KnpDgCYl/qQmkXIiEiOsz5/QNOUSE3AeoExJkfeOfzel4Db2I5ZcwJ2w4lHw6OaSZOSgfjpZsoNQ9SiV25WoHXi+zj344oajTqPcmsIuV1bMXIDi8bHAY049JmAp1mLeq1p1QomKxtYNpZ7HlUvXztvEnUbRABy3//g+SFWS1FIw7XAGkk3ahiB1FUz4mQdu+qjDYRBMm3jUetloMe/ulD79+vJa3R6H6XfyhLUIC6EiiW6zVU8xuMVYkyRFJCNmm6LuxUWccAxUkoN41WZ7moW4sCgPmzXOdTcyianIKO4dcQbyCL1bvqdiyVKVetGqM4W9nvqjkoYpVFAOaJug4GGorLGQGKNuVWI/bpDVyqh8d/ATIIlh1Di3i066YJc8noEgkjx9AMmXfn/Jq2S0w5BkMKb0KHSbk4QR+cFE2FG+drsHQGfwkjalaqJY0B99ziJZAL1QJXJQY8WHbD+GfOoVDPCShmF11CV+V1TcPr3ZclwtUvRUkqeXNorBO5BKGocSqL6KjZ3Zt+QwGeS8BWTr2jwKUoSdvXjZxSCxR9S4HZ2/v4snbDTVtG0knrsma4hnM0mFoZPuWqum6bvkmuuN3RmhJYiWJv49XRrgriMmZrgr/nTZaKPk75+OSVxozzrZ0XduvLCHf5sTL7yPnkrri6mfvgvsV+XsPW64OkpJlKKob75ZkON8xWerNk8I5TMOvcSx+p4OjST2Bd2SYmojf8iBXOLJHo/jg8MYOpOJlmxrHk8sHT3rxg20asduromzzBo6zNM+R367t/sQbk8C/LCWm7fvFKxEWHJqWWUtEiCk2Xvay8A0pwR9gIKZv+j5vi0i0TK7Gw12ThBxk7ApeFgZDuCtIQOkFPyrSYLp4qA02Z5lv6zmYBMwqimNoR32OdWNdbmsu6EdRdJlR6ZqoaDEkER9/cKasxYqv6Kzf1tpjKMNFRTWMdrHkITrb1kOyYpWK7ZIEz2qxG5s1M1ahJrFsXVff+IGLCZkL/x29bbJKLImKTceKndT9Gtg2cmUWKRZvKiKrJLStILuu2qytxHxi+AikljRLEr+RRGntVhUS+BWgK5Xm5MeI9l2kaZItW5D6JN592wrQNDQfHIDVdanmttnEsGuWgsR6UtN1HpI0mziu6Nd9UbZE3xCRDB4vKToPctYkJ0GgHVT+qynuloSkQQ3DWYZtYhIgvZIkqm7GGicB9VhLEq3q4ezPkCgkABIsJmHHug9y7klI1jh2XdX2Hc11XWSfkOB8w9LKpfRk2+CiGL+OmmxJ2LEBX/URDHVjGyltOEvetLMDEjjoIB2c0mojzgcWUo2QkIgmYAAHTUeCN5ydkqjZmr5dG0dt0iHRCM9IDYyI+ATSYoS/i9TYtaFS1PiqrWs/R8JCyBRtoglk665o27RIgU/ELCaBjNjmWdo2NMSzNbsO1swqupS0zZo0TmgrTqCSIjHYr8cmK9m+aMm+xGouDSQkCFk+nEo8byk+DOVdWeSlN7UmTpQVTYeQEUOk0YBErKixImLHVmKW82UbvDR2LThUdHBHkwJLQe2YBf+oobHPW21dV8p3+6UkVjRNiU2kGdgEa0ndZMG/kWqorijBUFXRYJ7Ant50LbasYhFvmnzNFCXkiqwJvijaNdOk4S4LzXLiQ1znIY+YHIurXV40eQSFLQ/FSWIhSd9uz6KR6PuiDTRFqNTBgESWFs3iNEFcotoIOz9K/Lcux7mjY7EeW/HBg11iJ2RM8bG7QE5YXXZd+WClfju2zPLb36dxKqpD/sEdEffWGfsErK9q1r94TRwKSE39sVBDF0N/zVuF/7qW/hezeh/dxC1hb7T8okYvXplA+vC6tDhyLnr3K5d2gNfA9ia9BTlcDujlelE1iF9OJsudfFxvvbd2Dt+qLYpfWUwmvWu8XcuvX6YvEyLf8r90b1BJojd9mR7cmbzsjxer6fSF7k0HL5Pa6uXlpXcFXfReevxigWdyUZKAqe1Bou71ejDBZGYXwIBe8vRysuRrfK+3BhJLcouDbyy/9yR+sQI9LpbT9RUcmkzw4vtqMF0SEr3pZDABkVb/7S0H6wEWajntwSBpXUz3BFT3IvWm68EEbtGTFb8AVS4mU6zPxXRyBU18X+F8uh5I8Od7mMRytVquBstBb/mdX097ayDJ9aZLGLQEUwFDAobrF3o6WK4HS/CE9UoCEot1YZT8pNocL4zpFITk1isOhCtJTCfryXIwWK3p1XS9BjPDmqBrdO9lCda3GPRAGfzLAG4t4f+CRA/C2nq6ANbLK3AAqdaL3nIyXfamPUJivVoswLZXkwUNMi1wNF2ArS16YGfgxdxgvVy90AM8Cr8MAlrqfYdhmMTk+3r5Woy+JLChD5bguYM1OCjdWy2WoIPecjoAMmBaK9ABtic4X0wGQKY2gbFTCViusU8U0WnF9+DahMYxbH2NGCstl0u6tlguF5ANII3RNByzML9g6cVl7KjFNUiG+IxfYvVw21tccQv/Co+HLxfXSXdVWA6mg+mv9tH/BxmyFy6y6oZiAAAAAElFTkSuQmCC" alt="Logo Of ABES">
+    <h2> ABES Engineering College, Ghaziabad</h2>
+    <h3>Class Time Table</h3>
+    <h3>Department- computer Applications</h3>
+    <table border="2" cellspacing="0" cellpadding="10">
+        <tr>
+            <th> **</th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
+            <th>7</th>
+            <th>8</th>
+            <th>9</th>
+        </tr>
+
+        <tr>
+            <th> Day / Time</th>
+            <th>08:50-09:40</th>
+            <th>09:40-10:30</th>
+            <th>10:40-11:30</th>
+            <th>11:30-12:20</th>
+            <th>12:20-01:10</th>
+            <th>01:10-02:00</th>
+            <th>02:00-02:50</th>
+            <th>02:50-03:40</th>
+            <th>03:40-04:30</th>
+        </tr>
+        <tr>
+            <th>Monday</th>
+            <td colspan="2" align ="center"> AI LAB </td>
+            <td>Soft Skills</td>
+            <td>Web Designing</td>
+            <td rowspan="5" align="center">Lunch</td>
+            <td>Operating System</td>
+            <td>Mathematics</td>
+            <td>Data Structures Using C++</td>
+            <td>Library</td>
+        </tr>
+        <tr>
+            <th>Tuesday</th>
+            <td>Operating System</td>
+            <td>Data Structures Using C++</td>
+            <td>Soft Skills</td>
+            <td>Mathematics</td>
+            <td>Employee Skills </td>
+            <td>Web Designing</td>
+            <td align="center">AI</td>
+             <td>Library</td>
+        </tr>
+        <tr>
+            <th>Wednesday</th>
+            <td>Operating System</td>
+            <td align="center">AI</td>
+            <td colspan="2" align="center">Web Designing Lab</td>
+            <td>Soft Skills</td>
+            <td>Data Structures Using C++</td>
+            <td>Mathematics</td>
+             <td>Web Designing</td>
+        </tr>
+        <tr>
+            <th>Thursday</th>
+            <td>Operating System</td>
+            <td colspan="2" align="center">AI LAB</td>
+            <td>Mathematics</td>
+             <td>Web Designing</td>
+             <td colspan="2" align="center">Empolyebilty Skills </td>
+             <td>Soft Skills</td>
+        </tr>
+        <tr>
+            <th>Friday</th>
+            <td align="center">AI</td>
+            <td align="center">Soft Skills</td>
+            <td>Operating System</td>
+            <td>Mathematics</td>
+            <td>Data Structures Using C++</td>
+            <td>Web Designing</td>
+            <td colspan="2" align="center">Empolyebilty Skills </td>
+        </tr>
+    </table>
+</body>
+</html>
